@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141916">
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:title" content="Harvey Breaux — Software, systems & automation">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <title>Harvey Breaux — Software, systems & automation</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="Harvey Breaux home"><span class="monogram">hb<span>.</span></span><span>Harvey Breaux</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#experience">Experience</a><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-cross" aria-hidden="true">✳</span> Software / Reliability / Automation</p>
+        <h1 id="hero-title">Complex systems.<br>Thoughtful tools.<br><em>Less friction.</em></h1>
+        <p class="hero-description">I’m Harvey, a software engineer who turns operational complexity into tools that make work simpler. From agentic QA to cloud infrastructure, I build for the people behind the systems.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="./resume.html">View résumé <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-location"><span class="location-mark" aria-hidden="true">⌖</span> {{LOCATION}} <span class="location-line"></span> Building better ways to work.</div>
+      </div>
+      <div class="system-panel">
+        <div class="panel-heading"><span><i aria-hidden="true"></i> THE WORK, CONNECTED</span><span class="panel-index" aria-hidden="true">FIG. 01</span></div>
+        <div class="diagram" aria-label="Illustrative diagram of a QA agent delegating a test plan to sub-agents">
+          <svg class="diagram-wires" viewBox="0 0 480 350" preserveAspectRatio="none" fill="none" aria-hidden="true"><path d="M240 65V115 M240 195V230 M80 275V230H400V275 M240 230V275"/><path class="wire-flow" d="M240 65V115 M240 195V230 M80 275V230H400V275 M240 230V275"/></svg>
+          <div class="input-node"><span class="node-icon" aria-hidden="true">≡</span><span id="diagram-input">QA test plan</span><span class="input-format" id="diagram-format">INPUT</span></div>
+          <div class="core-node"><span class="core-icon" aria-hidden="true">✳</span><div><span class="node-overline" id="diagram-overline">ORCHESTRATE & DELEGATE</span><strong id="diagram-core">Agentic QA Agent</strong></div></div>
+          <div class="output-nodes"><div class="output-node"><span aria-hidden="true">01</span><strong id="diagram-output-1">UI actions</strong><small id="diagram-detail-1">Playwright MCP</small></div><div class="output-node"><span aria-hidden="true">02</span><strong id="diagram-output-2">System access</strong><small id="diagram-detail-2">SSH / portal</small></div><div class="output-node"><span aria-hidden="true">03</span><strong id="diagram-output-3">Individual tests</strong><small id="diagram-detail-3">Sub-agents</small></div></div>
+        </div>
+        <p class="diagram-caption" id="diagram-caption" aria-live="polite">Individual tests delegated. Long-running context kept focused.</p>
+        <div class="diagram-tabs" role="tablist" aria-label="Explore work areas"><button type="button" id="tab-agent" role="tab" aria-selected="true" aria-controls="system-description" data-mode="agent">01 / Agentic QA</button><button type="button" id="tab-tooling" role="tab" aria-selected="false" aria-controls="system-description" tabindex="-1" data-mode="tooling">02 / Tooling</button><button type="button" id="tab-cloud" role="tab" aria-selected="false" aria-controls="system-description" tabindex="-1" data-mode="cloud">03 / Cloud</button></div>
+        <p class="panel-footnote" id="system-description" role="tabpanel" aria-labelledby="tab-agent">Illustrative system view · based on professional work</p>
+      </div>
+    </section>
+    <div class="expertise-strip"><div class="wrap"><span class="strip-label">Across the stack</span>{{STACK_STRIP}}<span class="strip-end" aria-hidden="true">↗</span></div></div>
+    <section id="work" class="work-section section-light">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2>Practical problems.<br><em>Purpose-built solutions.</em></h2></div><p>A few things I’ve built to help teams<br class="desktop-break"> move faster and operate with confidence.</p></div>
+        <div class="project-list">{{PROJECTS}}</div>
+        <p class="work-note"><span aria-hidden="true">↳</span> Professional work at Alkira and Cradlepoint. Descriptions highlight my contributions; internal source code is not public.</p>
+      </div>
+    </section>
+    <section id="experience" class="experience-section wrap">
+      <div class="experience-intro"><p class="eyebrow">02 / The experience behind it</p><h2>Built in the<br><em>real world.</em></h2><p>From customer-facing API support to software engineering and production reliability. A career shaped by understanding the problem, then building a better way.</p><a href="./resume.html" class="text-link">The full résumé <span aria-hidden="true">↗</span></a></div>
+      <div class="timeline">{{EXPERIENCE}}</div>
+    </section>
+    <section class="capabilities-section wrap" aria-labelledby="capabilities-title"><div class="section-heading"><div><p class="eyebrow">03 / Toolkit</p><h2 id="capabilities-title">The tools change.<br><em>The problem comes first.</em></h2></div></div><div class="capabilities-grid">{{SKILLS}}</div></section>
+    <section id="contact" class="contact-section"><div class="wrap contact-inner"><div><p class="eyebrow">04 / Start a conversation</p><h2>Good systems start<br>with a <em>good conversation.</em></h2><a class="email-link" href="mailto:{{EMAIL}}">{{EMAIL}} <span aria-hidden="true">↗</span></a></div><span class="contact-asterisk" aria-hidden="true">✳</span></div></section>
+  </main>
+  <footer class="wrap site-footer"><a class="brand" href="#"><span class="monogram">hb<span>.</span></span><span>{{NAME}}<small>{{LOCATION}}</small></span></a><div class="footer-links"><a href="{{GITHUB}}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="{{LINKEDIN}}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="./resume.html">Résumé <span aria-hidden="true">↗</span></a></div><span class="footer-note">Thoughtful tools. Less friction.</span></footer>
+</body>
+</html>
